@@ -1,15 +1,18 @@
 {
-  "name": "npm-tester-12321",
+  "name": "@andreas-groos/crl",
   "version": "1.0.0",
   "description": "Made with create-react-library",
   "author": "andreas-groos",
   "license": "MIT",
-  "repository": "andreas-groos/npm-tester",
+  "repository": "git://github.com/andreas-groos/crl",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
   "engines": {
     "node": ">=10"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
